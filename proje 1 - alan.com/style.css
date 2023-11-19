@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+:root{
+    background-color: #f3eee9;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 200vh;
+}
+
+/* ! NAV BAR BAŞLANGIÇ */
+
+header {
+    width: 100%;
+    height: 5rem;
+    background-color:#FCEDDA;
+    padding: 4px 12px;
+    border-bottom: 2px solid #f4e0c7; 
+    position: sticky;    
+    top: 0;
+    z-index: 4;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* SOLDAKİ LOGO */
+.logo{
+    
+    /* width: 10%; */
+    padding: 5px;
+    display: flex;
+
+}
+.logo-border{
+    border-top: 4rem solid #ee4d34e8;
+    border-right: 4rem solid transparent;
+    position: relative;
+    
+    
+}
+
+.logo-metin {
+    font-family: 'Anek Kannada', sans-serif !important;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: x-large;
+}
+
+.logo-metin > a {
+    text-decoration: none;
+    color: black; 
+}
+
+/* SOLDAKİ LOGO BİTİŞ */
+
+
+/* ORTA MENÜ  BAŞLANGIÇ*/
+.nav-link{
+    width: 28%;
+    
+    
+}
+.nav-link > ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.link-list > li > a{
+    text-decoration: none;
+    color:#EE4E34;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    border-left: 2px solid #FF8A5F;
+    transition: background-color 100ms ;
+    padding: 1px;
+    
+}
+
+
+.link-list > li > a:hover{
+    
+    background-color: #FF8A5F;
+    color: #FCEDDA;
+    
+}
+
+/* ORTA MENÜ BİTİŞ */
+
+/* NAV BUTTON BAŞLANGIÇ */
+
+.buttons{
+   
+    display: flex;
+}
+
+.sign-in{
+    padding: 12px;
+    font-size: medium;
+    background-color: rgb(88, 88, 227);
+    color: rgb(234, 233, 233);
+    border: 1px solid rgb(59, 59, 201);
+    border-radius: 10px;
+    transition: background-color 200ms;
+}
+
+.sign-up{
+    padding: 12px;
+    font-size: medium;
+    background-color: rgba(88, 88, 227, 0);
+    color: rgb(88, 88, 227);
+    border: 1px solid rgb(59, 59, 201);
+    border-radius: 10px;
+   transition: background-color 200ms;
+    
+}
+
+.sign-up:hover{
+    cursor: pointer;
+    background-color: rgb(88, 88, 227);
+    color: white;
+}
+.sign-in:hover{
+    cursor: pointer;
+    background-color: rgb(78, 78, 183);
+    color: white;
+}
+
+.cizgi-v{
+    width: 0.5px;
+    margin: 0 5px;
+    background-color: #141486;
+}
+/* NAV BUTTON BİTİŞ */
+
+/* ! NAV BAR BİTİŞ */
+
+
+/*! MAIN BAŞLANGIÇ */
+
+
+/* GİRİS SECTİON BAŞLANGIÇ */
+#giris{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 3rem;
+    padding: 3rem;
+    border: 1px solid black;
+    color:#EE4E34;    
+    font-size: xx-large;
+    font-weight: 700;
+    transition: all 1.5s;
+    width: 28%;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+.box:hover{
+    width: 100%;
+   
+}
+
+/* GİRİS SECTİON BİTİŞ */
+
+.h2{   
+        display: flex;
+        justify-content: center;
+        letter-spacing: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        & >h2{
+            border-bottom: 3px solid #EE4E34;
+        }
+      
+}
+
+
+/* KARTLAR SECTİON BAŞLANGIÇ */
+
+#kartlar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  
+}
+
+
+.card-box{
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.card-1{
+    width: 20rem;
+    height: 27rem;
+    border: 1px solid #EE4E34;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backface-visibility: hidden;
+}
+
+.animation-box-1{
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 20px;
+    animation-name: animeBox;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animeBox {
+    0%{
+        background-color: yellow;
+        transform: translate(0);
+
+    }
+    25%{
+        background-color: #EE4E34;
+        width: 100%;
+        height: 0p;
+
+    }
+    50%{
+      
+    }
+    75%{
+        background-color: #eeb334;
+        height: 200px;
+        
+    }
+    
+    100%{
+        width: 100%;
+        height: 250px;
+        background-color: #FF8A5F;
+    }
+}
+
+
+.card-2{
+    width: 20rem;
+    height: 27rem;
+    border: 1px solid #EE4E34;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.animation-box-2{
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 20px;
+    animation-name: animeBox-2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animeBox-2 {
+    0%{
+        background-color: yellow;
+        transform: translate(0);
+
+    }
+    25%{
+        background-color: #EE4E34;
+        width: 100%;
+        height: 0p;
+
+    }
+    50%{
+      
+    }
+    75%{
+        background-color: #eeb334;
+        height: 200px;
+        
+    }
+    
+    100%{
+        width: 100%;
+        height: 250px;
+        background-color: #4045c7;
+    }
+}
+.card-3{
+    width: 20rem;
+    height: 27rem;
+    border: 1px solid #EE4E34;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.animation-box-3{
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 20px;
+    animation-name: animeBox-3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animeBox-3 {
+    0%{
+        background-color: yellow;
+        transform: translate(0);
+
+    }
+    25%{
+        background-color: #EE4E34;
+        width: 100%;
+        height: 0p;
+
+    }
+    50%{
+      
+    }
+    75%{
+        background-color: #eeb334;
+        height: 200px;
+        
+    }
+    
+    100%{
+        width: 100%;
+        height: 250px;
+        background-color: #3da145;
+    }
+}
+.card-4{
+    width: 20rem;
+    height: 27rem;
+    border: 1px solid #EE4E34;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.animation-box-4{
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 20px;
+    animation-name: animeBox-4;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animeBox-4 {
+    0%{
+        background-color: yellow;
+        transform: translate(0);
+
+    }
+    25%{
+        background-color: #EE4E34;
+        width: 100%;
+        height: 0p;
+
+    }
+    50%{
+      
+    }
+    75%{
+        background-color: #eeb334;
+        height: 200px;
+        
+    }
+    
+    100%{
+        width: 100%;
+        height: 250px;
+        background-color: rgb(252, 205, 52);
+    }
+}
+
+#sosyal-alan{
+    margin-top: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-bottom: 25%;
+    
+    
+}
+#sosyal-alan > span{
+    color: #EE4E34;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+
+/* KARTLAR SECTİON BİTİŞ */
+
+
+
+
+/* TANITIM SECTİON BAŞLANGIÇ */
+#tanitim{
+    display: flex;
+    justify-content: center;
+}
+
+
+.kutu{
+  width: 90%;  
+  height: 500px;
+  border: 1px solid black;  
+  color: #EE4E34;
+  padding: 3rem;
+    & h2 > span{
+    color: black;
+  }
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+.kutu > p {
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: 400;
+    line-height: 37px;
+}
+
+
+/* TANITIM SECTİON BİTİŞ */
+
+/*! MAIN BİTİŞ */
+
+/*! FOOTER BAŞLANGIÇ  */
+
+.footer-box{
+    width: 100%;
+    height: 250px;
+    background-color: #eeb33468;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+
+.col-1 > ul  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.col-2 >ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: small;
+}
+
+/*! FOOTER BİTİŞ  */
+
+/* @media screen and (max-width:1416px){
+    .
+}
+
+@media screen and (max-width:1380px){
+  .card-box{
+    width: 100%;
+    
+  }
+
+}
+ */
