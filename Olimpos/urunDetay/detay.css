@@ -1,0 +1,161 @@
+header {
+    background-color: transparent;
+    z-index: 5;
+    filter: blur(0.2px);
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+  }
+  header .yuvarla {
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header .nav ul li {
+    list-style: none;
+    gap: 5px;
+    align-items: center;
+  }
+  header .nav ul li a {
+    font-size: small;
+    color: black;
+  }
+  
+  .search-bar {
+    padding: 10px;
+  }
+  .search-bar i {
+    position: absolute;
+    z-index: 1;
+    margin-top: 7px;
+    margin-left: 4px;
+    opacity: 0.7;
+  }
+  .search-bar input {
+    padding-left: 30px;
+  }
+  
+  .cerceve {
+    position: relative;
+  }
+  
+  .kutu-1, .kutu-2 {
+    height: 100vh;
+    background: linear-gradient(180deg, black, rgb(34, 34, 34), rgb(55, 55, 55)) !important;
+  }
+  .kutu-1 h1, .kutu-2 h1 {
+    font-size: 80px;
+    padding: 8px;
+  }
+  
+  .kutu-1 .container {
+    transform: translateY(-10%) !important;
+  }
+  
+  .kutu-2 {
+    background: linear-gradient(360deg, black, rgb(34, 34, 34), rgb(55, 55, 55)) !important;
+  }
+  
+  .content h2 {
+    font-size: 60px;
+  }
+  
+  .v-line {
+    height: 2px;
+    background-color: #ebebeb;
+  }
+  
+  .vis {
+    height: 85vh;
+    top: 15%;
+    left: 50%;
+  }
+  .vis img {
+    width: 100%;
+    height: 100%;}
+
+
+
+
+
+/** Detay Sayfasi Main */
+
+
+.sag-kutu, .sol-kutu{
+        width: 100%;
+        height: 80vh;
+    }
+
+
+/** Sol kutu */
+
+.sol-kutu{
+    background-color: #2BE28A;
+}
+
+.fotograf{
+    height: 50vh;
+    border: 1px solid black;
+   
+}
+
+.mini-fotograf .col-3 {
+    list-style: none;
+    height: 20vh;
+    border: 1px solid black;
+    
+}
+
+
+/** Sağ kutu */
+.sag-kutu{
+    background-color: blueviolet;
+}
+
+#sutun{
+    width: 100%;
+   fill: wheat;
+}
+#sutun2{
+  height: 40px;
+ 
+}
+.kutu-svg{
+    height: 40px;
+  width: 40px;
+}
+
+p{
+  color: #2BE28A;
+}
+
+
+.buttons .btn{
+  background-color: #83E22B !important;
+}
+
+.logo{
+  top: 100%;
+  left: 50%;
+
+  transform: translate(-50%, -130%);
+}
+
+
+/** RESPONSIVE **/
+@media screen and (max-width: 991px) {
+    .yuvarla{
+      width: 60% !important;
+      height: 7vh;
+      justify-content: center !important;
+    }
+  
+    .yuvarla:hover{
+      width: 100%;
+      transition: 2s, all;
+    }
+  }

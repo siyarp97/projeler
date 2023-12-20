@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./girisyap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-black">
+
+    <header>
+        <div class=" yuvarla container  d-flex justify-content-between align-items-center gap-4 ">
+
+
+            <a href="../index.html" class="fs-5 d-flex align-items-center text-dark ">
+                <span class="fs-5">Olim </span><span
+                    class="border border-1 text-black border-black px-1 fw-bold fs-5">Pos</span>
+            </a>
+
+
+
+            <div class="nav w-50 d-flex align-items-center mt-3">
+                <ul class="d-flex gap-4  align-items-center text-center w-100  ">
+                    <li>
+                        <a href="./kategoriler.html">Kategoriler</a>
+                    </li>
+                    <li>
+                        <a href="#">Kampanyalar</a>
+                    </li>
+                    <li>
+                        <a href="#">Çok Satanlar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search-bar d-flex w-75">
+
+                <i class="fa-solid fa-magnifying-glass ms-2"></i>
+                <div class="cerceve w-100">
+                    <input class="form-control form-control-sm " type="text" placeholder="Ara" aria-label=".form-control-lg example">
+                </div>
+
+            </div>
+
+
+            <div class=" butonlar d-flex gap-1 ">
+                <button class="btn btn-light position-relative">
+                    <a href="../Sepet/sepet.html">
+                        <i class="fa-solid fa-cart-shopping fs-5 text-black"></i>
+                        <span class="item-count position-absolute rounded-pill">0</span>
+                    </a>
+                </button>
+                <div class="btn btn-light"><i class="fa-solid fa-user fs-5⚡️"></i></div>
+            </div>
+
+        </div>
+    </header>
+
+
+<main>
+    <section class="d-flex justify-content-center align-items-center container ">
+        <div class="outbox mt-5">
+            <div class="ic-box d-flex justify-content-center align-items-center flex-column gap-2">
+                <!-- <span class="border border-1 rounded-1 w-50 text-center text-white p-2 bg-secondary fs-5 ">Üye Ol</span> -->
+                <form class="w-75 d-flex justify-content-center  flex-column mt-2">
+                    <div class="mb-3 text-light">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="sifre">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button class="btn btn-success fs-4">Giriş Yap</button>
+                  </form>
+                  <div class="cizgi d-flex w-75 justify-content-between align-items-center">
+                    <div class=" border bg-black w-75 "></div> 
+                    <span class="d-flex text-center yazi col-1 align-items-center justify-content-center">Ya da</span>
+                    <div class="  border bg-black w-75"></div> 
+                  </div>
+                <a href="../kaydol/kaydol.html" class="w-75"><span class=" btn btn-primary mt-2 rounded-1 w-100 text-center text-white p-2  fs-5 ">Üye Ol</span></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+    <!-- Lenis Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1c772214e9.js" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Dizin Script -->
+    <script src="./girisyap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detay</title>
+    <link rel="stylesheet" href="./detay.css">
+    <!--* BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%230000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%230000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+    </style>
+</head>
+<body>
+
+<!--* NavBar Başlangıç -->
+
+    <header>
+     <div class=" yuvarla container  d-flex align-items-center gap-4 ">
+
+        <a href="./index.html" class="fs-5 d-flex align-items-center text-dark ">
+            <span class="fs-5">Olim </span><span class="border border-1 text-black border-black px-1 fw-bold fs-5">Pos</span>
+        </a>
+            
+
+    
+        <div class="nav w-100 d-lg-flex d-none align-items-center mt-3  ">
+            <ul class="d-lg-flex align-items-center text-center w-100 justify-content-xl-around justify-content-lg-between px-xl-5 px-lg-4 d-none">
+                <li>
+                    <a href="./Kategoriler/kategoriler.html">Kategoriler</a>
+                </li>
+
+                <li>
+                    <a href="#">Kampanyalar</a>
+                </li>
+
+                <li>
+                    <a href="#" class="col-md-12">Çok Satanlar</a>
+                </li>
+
+            </ul>
+                
+        </div>
+            
+        <div class="search-bar  w-75 d-lg-flex d-none">
+
+            <i class="fa-solid fa-magnifying-glass ms-2"></i>
+            <div class="cerceve w-100">
+                <input class="form-control form-control-sm w-100 " type="text" placeholder="Ara" aria-label=".form-control-lg example">
+            </div>
+        
+        </div>
+
+
+        <div class=" butonlar  gap-1 d-lg-flex d-none">
+            <div class="btn"><i class="fa-solid fa-cart-shopping fs-5"></i></div>
+            <div class="btn"><i class="fa-solid fa-user fs-5⚡️"></i></div>
+        </div>
+
+    </div>
+ 
+</header>
+<!--* NavBar Bitiş -->
+
+<main class="d-flex container mt-4">
+    <section class="w-100">
+        
+        <div class="sol-kutu p-4">
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" ></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/t1.avif" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/t1.avif" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/t1.avif" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/t1.avif" class="d-block w-100 rounded" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+            <!--             
+              <div class="fotograf w-100 rounded">
+                <img src="../img/t1.avif" alt="" class="rounded w-100 h-100">
+            </div>  
+            
+             -->
+            
+            
+            
+            
+            
+            
+
+
+            <div class="container mini-fotograf w-100 d-flex justify-content-between mt-3 px-4 py-3">
+
+                    <div class="col-3">
+                        
+                    </div>
+                    <div class="col-3 ms-1 cer-1">
+
+                    </div>
+                    <div class="col-3 ms-1 cer-2">
+
+                    </div>
+                    <div class="col-3 ms-1 cer-3">
+
+                    </div>
+
+            </div>
+        
+        </div>
+
+    </section>
+    
+    <section class="w-100">
+        
+        <div class="sag-kutu p-5 mb-4 d-flex flex-column justify-content-around position-relative">
+
+            <div class="d-flex justify-content-between">
+                <div class="yildizli d-flex justify-content-between flex-column gap-2">
+                    <h2 style="color: #ececec;">İlahlar</h2>
+
+                    <div class="yildizlar ">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning ms-2"></i>
+                    <i class="fa-solid fa-star text-warning ms-2"></i>
+                    <i class="fa-solid fa-star text-warning ms-2"></i>
+                    <i class="fa-regular fa-star ms-2"></i>
+                    </div>
+
+                </div>
+                
+                <div class="fiyatlik d-flex justify-content-center align-items-center">
+                    <span>
+                        <h3 style="color: #ececec;">100 TL</h3>
+                    </span>
+                </div>
+
+            </div>
+                        
+                    
+                    <div class="w-100 kutu-svg d-flex  justify-content-between align-items-center">
+                        <div class="sinir w-50">
+                            <div class="v-line w-75"></div>
+                        </div>
+                        <div class="kutu-svg position-relative">
+                            <img src="../img/sutun.svg" class="position-absolute text-light" id="sutun" class="">
+                        </div>
+                        <div class="sinir w-50 d-flex justify-content-end">
+                            <div class="v-line w-75 "></div>
+                        </div>
+                    </div>
+                
+                
+                <div class="py-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi ipsam voluptates quo nemo voluptatem aperiam magni, obcaecati nam molestias impedit! Ducimus cumque perferendis sit, commodi maiores itaque quos voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ex explicabo, ab <br>  <br>assumenda, adipisci cupiditate neque sed enim nulla ducimus ipsam. Suscipit sequi vero nostrum quia sint ipsum recusandae reiciendis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, omnis. Alias repellat exercitationem animi dicta itaque! Consequuntur quo quisquam veritatis accusamus! Eum omnis necessitatibus consequatur ullam numquam tempore, nesciunt quaerat?
+                    </p>
+                </div>
+                
+                <div class="w-100 d-flex  justify-content-between align-items-center">
+                    <div class="sinir w-50">
+                        <div class="v-line w-75"></div>
+                    </div>
+                    <div class="kutu-svg position-relative">
+                        <img src="../img/sutun.svg" class="position-absolute" id="sutun">
+                    </div>
+                    <div class="sinir w-50 d-flex justify-content-end">
+                        <div class="v-line w-75 "></div>
+                    </div>
+                </div>
+
+   
+        
+            <div class="buttons w-100">
+                <button class="btn  .text-dark-emphasis w-100"> Sepete Ekle</button>
+            </div>
+       
+            <div class=" d-flex flex-column justify-content-center align-items-center mb-4 position-absolute logo">
+              
+                <h5 class="text-white">Olim<span class="text-white px-1 fw-bold border border-1 ">Pos</span></h5>
+                
+            
+            </div>
+            
+
+            
+        </div>
+
+    </section>
+
+
+</main>
+    
+
+            
+            
+
+
+
+    <!--* Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--* Font Awesome  -->
+    <script src="https://kit.fontawesome.com/1c772214e9.js" crossorigin="anonymous"></script>
+    <!--* BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--* script -->
+    <script src="./detay.js"></script>
+</body>
+</html>
